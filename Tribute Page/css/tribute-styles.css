@@ -1,0 +1,116 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
+h1, header p {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.section-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    grid-auto-rows: 31rem;
+    justify-items: center;
+    align-items: center;
+    /* grid-auto-flow: row; */
+}
+
+#img-div {
+    /* width: 85%; */
+    margin: 0px;
+    grid-column: span 4;
+}
+
+#image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+#tribute-info {
+    grid-column: span 4;
+    max-width: 55vw;
+    min-width: 700px;
+    max-height: 540px;
+    overflow: auto;
+    /* background-color: goldenrod; */
+    padding: 15px;
+}
+
+#discography {
+    padding: 20px;
+}
+
+#discography h2 {
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 18em;
+    height: 19em;
+    border-radius: 20px;
+    margin: 15px 30px;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.card:hover {
+    opacity: 0.7;
+    transition-property: opacity;
+    transition-duration: 0.4s;
+}
+
+.item1 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/e/e5/Avicii_-_True_%28Album%29.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.item2 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/c/c7/Avicii-Stories-2015-1200x1200.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.item3 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/9/9a/Avicii_-_Tim.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.item4 {
+    background-image: url(https://thumbnailer.mixcloud.com/unsafe/300x300/extaudio/b/e/d/b/0dc7-cfb6-4632-bfac-ba803c17a650);
+    background-repeat: no-repeat;
+    background-size: contain;
+}

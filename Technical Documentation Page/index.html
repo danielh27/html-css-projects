@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>
+            Python Documentation
+        </header>
+        <ul>
+            <li><a href="#INTRODUCTION_TO_PYTHON" class="nav-link">Introduction to Python</a></li>
+            <li><a href="#WHAT_IS_A_PYTHON_VARIABLE?" class="nav-link">What is a Python Variable?</a></li>
+            <li><a href="#SOME_CONTROL_FLOW_TOOLS" class="nav-link">Some Control Flow Tools</a></li>
+            <li><a href="#DEFINING_FUNCTIONS" class="nav-link">Defining Functions</a></li>
+            <li><a href="#WHAT_IS_A_DATA_STRUCTURE?" class="nav-link">What is a Data Structure?</a></li>
+            <li><a href="#SYNTAX_ERROS_IN_PYTHON" class="nav-link">Syntax Erros in Python</a></li>
+            <li><a href="#HOW_TO_HANDLE_EXCEPTIONS_IN_PYTHON?" class="nav-link">How to handle exceptions in Python?</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="INTRODUCTION_TO_PYTHON">
+            <header>
+                Introduction to Python
+            </header>
+            <article>
+                <p>Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.</p>
+                <p>This tutorial introduces the reader informally to the basic concepts and features of the Python language and system. It helps to have a Python interpreter handy for hands-on experience, but all examples are self-contained, so the tutorial can be read off-line as well.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="WHAT_IS_A_PYTHON_VARIABLE?">
+            <header>
+                What is a Python Variable?
+            </header>
+            <article>
+                <p>Variables are the building blocks of a Python program and we will be using them a lot.</p>
+                <p>A variable in Python is a symbolic name that points to the location where data is stored in memory. Variables are created or declared whenever a value is assigned to a character or sequence of characters in Python.</p>
+                <p>In the example below, the value 10 is being pointed by the variable called val_num.</p>
+                <code>val_num = 10</code>
+                <p>Since the variable val_num is just a container pointing to where the data is stored in memory, the variable can be assigned to another variable as well. This passes the reference of the value to the assigned variable as well.</p>
+                <code>
+                    val_num = 10
+                    sec_val_num = val_num
+                </code>
+            </article>
+        </section>
+
+        <section class="main-section" id="SOME_CONTROL_FLOW_TOOLS">
+            <header>
+                Some Control Flow Tools
+            </header>
+            <article>
+                <p>Python uses the usual flow control statements known from other languages, with some twists.</p>
+                <p>Since the Python interpreter executes code in a line-by-line manner, Python control flow tools help dictate what line(s) of code should run in a Python program. There are different types of control flow tools available to us in Python</p>
+                <ul>
+                    <li>If statement</li>
+                    <li>If-else statement</li>
+                    <li>If-elif-else statement</li>
+                    <li>For Loop statement</li>
+                    <li>While Loop statement</li>
+                    <li>Break and Continue statements</li>
+                    <li>Pass statement</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="DEFINING_FUNCTIONS">
+            <header>
+                Defining Functions
+            </header>
+            <article>
+                <p>A function in Python is a block of code packaged together to perform a single related action.</p>
+                <p>The name ‘function’ comes from the fact that a block of code is trying to achieve a single functionality in the program. The main advantage of writing and using functions in Python is that it allows programmers to break their tasks into a group of reusable code.</p>
+                <p>There are two kinds of functions in Python: built-in functions and user-defined functions.</p>
+                <ul>
+                    <li>Built-in functions in Python are functions that come pre-written when you install Python and are readily available to use when coding.</li>
+                    <li>User-defined functions in Python are functions that are defined by the user to perform a custom task. </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="WHAT_IS_A_DATA_STRUCTURE?">
+            <header>
+                What is a Data Structure?
+            </header>
+            <article>
+                <p>Organizing, managing and storing data is important as it enables easier access and efficient modifications. Data Structures allows you to organize your data in such a way that enables you to store collections of data, relate them and perform operations on them accordingly. </p>
+                <h2>Types of Data Structures in Python</h2>
+                <p>Python has implicit support for Data Structures which enable you to store and access data. These structures are called List, Dictionary, Tuple and Set.</p>
+                <p>Python allows its users to create their own Data Structures enabling them to have full control over their functionality. The most prominent Data Structures are Stack, Queue, Tree, Linked List and so on which are also available to you in other programming languages. So now that you know what are the types available to you, why don’t we move ahead to the Data Structures and implement them using Python.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="SYNTAX_ERROS_IN_PYTHON">
+            <header>
+                Syntax Erros in Python
+            </header>
+            <article>
+                <p>Syntax errors are errors caused by the use of incorrect Python syntax.</p>
+                <p>The following example shows an example of a syntax error where the print function was written without any round brackets.</p>
+                <code>print "Hello, World!"</code>
+                <p>You can see that whenever a syntax error occurs in Python, the parser points at the point where the error has occurred using an upright triangle (^) symbol.</p>
+                <p>The right way to solve syntax errors is by writing the correct syntax in Python.</p>
+                <h2>Logical Erros (Exceptions)</h2>
+                <p>Even if a statement or expression is syntactically correct, it may throw out an error during execution. Such errors are termed as logical errors or exceptions.</p>
+                <p>These errors occur as a result of not correctly writing the logic of the program. The following example shows an exception being raised when a number is divided by zero:</p>
+                <code>>>> 10 * (1/0)</code>
+            </article>
+        </section>
+
+        <section class="main-section" id="HOW_TO_HANDLE_EXCEPTIONS_IN_PYTHON?">
+            <header>
+                How to handle exceptions in Python?
+            </header>
+            <article>
+                <p>Now that we know what exceptions are, let us learn how to handle them.</p>
+                <p>Python provides a set of statements that can be used to handle exceptions and they are known as try-except statements. They are similar to try-catch blocks used in other programming languages such as C, C++, and Java.</p>
+                <p>The syntax for a try-except statement is as follows:</p>
+                <code>
+                    try:
+                    # Code to be executed by default
+                    except:
+                    # Code to be executed if try block fails to be executed
+                </code>
+
+                <p>The try-except statement consists of two parts: Try and Except. It works as follows:</p>
+                <ul>
+                    <li>The try part of the statement consists of a set of code to be executed.</li>
+                    <li>If no exception occurs, the code in the try statement block is executed and the except clause is skipped.</li>
+                    <li>If an exception occurs in any part of the code in the try statement, the rest of the code is skipped and the except statement block is executed.</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

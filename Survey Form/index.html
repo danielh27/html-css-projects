@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+<body>
+
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please make sure to fill all fields correctly</p>
+    </header>
+
+    <main class="container">
+
+        <form id="survey-form" action="">
+
+            <div class="form-item">
+                <input type="text" id="name" placeholder="Enter your name" required><span class="barra"></span>
+                <label for="name" id="name-label">Full Name</label>
+            </div>
+
+            <div class="form-item">
+                <input type="email" id="email" placeholder="Enter your Email" required><span class="barra"></span>
+                <label for="email" id="email-label">Email</label>
+            </div>
+
+            <div class="form-item">
+                <input type="number"  id="number" min="18" max="70" placeholder="Enter your age" required><span class="barra"></span>
+                <label for="number" id="number-label">Age</label>
+            </div>
+
+            <div class="form-item dropdown">
+                <!-- <label for="dropdown">Select your class</label> -->
+                <select name="class" id="dropdown">
+                    <option value="">Please choose a country</option>
+                    <option value="saiyan">United States</option>
+                    <option value="namek">Canada</option>
+                    <option value="majin">United Kingdom</option>
+                    <option value="human">Germany</option>
+                </select> 
+            </div>
+
+            <!-- <div class="form-item subtitle"> -->
+                <p>Do you have work experience?</p>
+            <!-- </div> -->
+
+            <!-- Radio buttons -->
+            <div class="radio">
+
+                <input type="radio" id="yes" name="name" value="yes" checked>
+                <label for="yes">Yes</label>
+
+                <input type="radio" id="maybe" name="name" value="maybe">
+                <label for="maybe">Some experience</label>
+
+                <input type="radio" id="no" name="name" value="no">
+                <label for="no">No</label>
+            </div>
+
+            <!-- Checkboxes -->
+            <p>Select the technologies you have worked with</p>
+
+            <div class="checkboxes">
+
+                <input type="checkbox" id="html" name="field" value="cell">          
+                <label for="html">HTML & CSS</label>
+
+                <input type="checkbox" id="js" name="field" value="kame">
+                <label for="js">Javascript</label>
+                
+                <input type="checkbox" id="react" name="field" value="namek">
+                <label for="react">React</label>
+
+                <input type="checkbox" id="angular" name="field" value="karin">
+                <label for="angular">Angular</label>
+            </div>
+
+            <!-- Textarea -->
+            <p>Tell us your story</p>
+            <div class="textarea">
+                <textarea name="story" id="story" cols="30" rows="5"></textarea>
+            </div>
+
+            <div class="button">
+                <button type="submit" id="submit">Send</button>
+            </div>
+
+        </form>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Roboto:wght@300&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    font-family: inherit;
+}
+
+.logo .fas {
+    margin-left: 30px;
+    font-size: 3rem;
+    color: rgb(224, 224, 224);
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(13 16 15);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0px 50px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    color: #fff;
+    transition: 0.4s ease;
+}
+
+nav .contact {
+    box-shadow: 0px 0px 2px #fff;
+}
+
+nav a:hover {
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../images/background2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.name h1 {
+    font-size: 5rem;
+    font-family: 'Oxygen', sans-serif;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+.name p {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 30px 0px;
+    text-align: center;
+    color: #fff;
+}
+
+.list-icons {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 60px;
+    margin-top: 60px;
+}
+
+.icon {
+    text-decoration: none;
+    font-size: 3.5rem;
+    color: rgb(255, 255, 255);
+    transition: 0.4s ease;
+}
+
+.icon:hover {
+    color: rgb(130, 226, 226);
+    transform: scale(1.2);
+}
+
+.projects {
+    margin: 20px 80px;
+    padding: 20px;
+}
+
+.project-title {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.tiles-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.project-tile {
+    width: 600px;
+    height: 650px;
+    display: grid;
+    grid-template-columns: 600px;
+    grid-template-rows: 290px 290px 70px;
+    grid-template-areas: "image"
+                         "text"
+                         "links";
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+    border-radius: 15px;
+    background-color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    transition: 0.4s ease;
+}
+
+.project-tile:hover {
+    opacity: 0.9;
+}
+
+.tile-image {
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.tile-text {
+    grid-area: text;
+    padding: 20px 40px;
+    background-color: #fff;
+}
+
+.tile-text h2 {
+    font-weight: normal;
+}
+
+.tile-text p {
+    color: gray;
+}
+
+.tile-links {
+    grid-area: links;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(44, 42, 42);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.live-demo, .view-code {
+    text-decoration: none;
+    color: #fff;
+    margin: 0px 30px;
+    padding: 10px;
+    border-radius: 12px;
+    transition: 0.4s ease;
+}
+
+.live-demo:hover, .view-code:hover {
+    background-color: rgb(80, 77, 77);
+}
+
+.live-demo .fas, .view-code .fas {
+    margin-right: 10px;
+}
+
+.project-tile .project1 {
+    background: url(../../images/tribute-avicii.jpg);
+    background-size: cover;
+}
+
+.project-tile .project2 {
+    background: url(../../images/survey-form.png);
+    background-size: cover;
+}
+
+.project-tile .project3 {
+    background: url(../../images/product.png);
+    background-size: cover;
+}
+
+.project-tile .project4 {
+    background: url(../../images/technical.png);
+    background-size: cover;
+}
